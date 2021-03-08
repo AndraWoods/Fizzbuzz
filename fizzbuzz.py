@@ -31,6 +31,22 @@ by both 3 and 5, say 'fizzbuzz'. Otherwise, say the number.
 
 def fizzbuzz():
     """Count from 1 to 20 in fizzbuzz fashion."""
+#So first let's do a for loop 
+#For i in range(1,21)
+#"i" represents any number between 1-21
+#Since numbers are not iterable we have to put them in a range to be able to go through it 
+    for i in range(1, 21):
+        if i % 15 == 0:
+            print("fizzbuzz")
+#Since 15 is both divisble by 3 and 5, we are saying that if i is divisble by both 3 and 5 then say fizzbuzz. 
+        elif i % 3 == 0:
+                print("fizz")
+        elif i % 5 == 0:
+                print("buzz")
+#Same principle as above
+        else:
+            print(i)
+#We are saying here that if it doesn't work out for all three cases then print the number.         
 
 
 if __name__ == '__main__':
